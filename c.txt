@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int i, sum;
+	char input[20];
+	
+	printf("문자열 입력 : ");
+	fgets(input, 20, stdin);
+
+	for(i=0;i<20;i++)
+	{
+		if(input[i]>='0'&&input[i]<='9')
+		{
+			sum+=(input[i]-'0');
+		}
+	}
+
+	printf("숫자 합 : %d\n", sum);
+	return 0;
+}
